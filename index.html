@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>영화 추천</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>영화 추천</h1>
+    <form id="text-form">
+      <label for="text1-input">년도</label>
+      <input
+        type="text"
+        id="year"
+        name="year-input"
+        placeholder="년도를 입력하세요"
+      />
+
+      <label for="text2-input">장르</label>
+      <input
+        type="text"
+        id="genre"
+        name="genre-input"
+        placeholder="장르를 입력하세요"
+      />
+      <button type="submit">검색</button>
+    </form>
+    <div id="contents"></div>
+
+    <div id="result">
+      <!-- 합쳐진 텍스트 결과는 JavaScript를 통해 동적으로 추가될 예정입니다 -->
+    </div>
+
+    <!-- JavaScript 파일 연결 -->
+    <script>
+      // 폼 제출 시 텍스트를 합쳐주는 함수
+      let $button = document.querySelector("button");
+
+      function combineText() {
+        // event.preventDefault(); // 폼 제출 시 새로고침 방지
+        let qeustion;
+
+        let year = document.getElementById("year").value;
+        let genre = document.getElementById("genre").value;
+
+        question = year + "년도의 장르가 " + genre + "인 영화를 추천해 줘";
+
+        // 합쳐진 결과를 HTML에 추가합니다
+        // var resultDiv = document.getElementById("result");
+        // resultDiv.textContent = question;
+
+        return question;
+      }
+
+      let data = [
+        {
+          role: "system",
+          content: "assistant는 영화 전문가이다.",
+        },
+      ];
+
+      let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
+
+      $button.addEventListener("click", (e) => {
+        e.preventDefault();
+        userInputData = "";
+        var quest = combineText();
+        userInputData = quest;
+        console.log(userInputData);
+        quest = "";
+
+        data.push({
+          role: "user",
+          content: userInputData,
+        });
+
+        chatGptAPI();
+      });
+
+      function chatGptAPI() {
+        fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+          redirect: "follow",
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            // console.log(res)
+            // console.log(res.choices[0].message.content)
+            document.querySelector("#contents").innerText =
+              res.choices[0].message.content;
+          });
+        // 아래 코드는 fetch 성공, 실패, 통신 중 여부와 상관없이 실행됩니다. 비동기에요.
+        console.log("hello world");
+      }
+      // 폼 제출 이벤트 리스너를 등록합니다
+      //   var form = document.getElementById("text-form");
+      //   form.addEventListener("submit", combineText);
+    </script>
+  </body>
+</html>
