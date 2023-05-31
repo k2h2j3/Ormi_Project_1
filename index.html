@@ -15,7 +15,6 @@
         name="year-input"
         placeholder="년도를 입력하세요"
       />
-
       <label for="text2-input">장르</label>
       <input
         type="text"
@@ -23,6 +22,13 @@
         name="genre-input"
         placeholder="장르를 입력하세요"
       />
+
+      <label for="text3-input">국내 또는 해외</label>
+      <select id="country" name="country-input">
+        <option value="">선택</option>
+        <option value="한국">국내</option>
+        <option value="해외">해외</option>
+      </select>
       <button type="submit">검색</button>
     </form>
     <div id="contents"></div>
@@ -42,8 +48,15 @@
 
         let year = document.getElementById("year").value;
         let genre = document.getElementById("genre").value;
+        let country = document.querySelector("select").value;
 
-        question = year + "년도의 장르가 " + genre + "인 영화를 추천해 줘";
+        question =
+          year +
+          "년도의 장르가 " +
+          genre +
+          "인 " +
+          country +
+          "영화를 추천해 줘";
 
         // 합쳐진 결과를 HTML에 추가합니다
         // var resultDiv = document.getElementById("result");
@@ -96,9 +109,6 @@
         // 아래 코드는 fetch 성공, 실패, 통신 중 여부와 상관없이 실행됩니다. 비동기에요.
         console.log("hello world");
       }
-      // 폼 제출 이벤트 리스너를 등록합니다
-      //   var form = document.getElementById("text-form");
-      //   form.addEventListener("submit", combineText);
     </script>
   </body>
 </html>
