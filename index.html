@@ -6,36 +6,51 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>영화 추천</h1>
-    <form id="text-form">
-      <label for="text1-input">년도</label>
-      <input
-        type="text"
-        id="year"
-        name="year-input"
-        placeholder="년도를 입력하세요"
-      />
-      <label for="text2-input">장르</label>
-      <input
-        type="text"
-        id="genre"
-        name="genre-input"
-        placeholder="장르를 입력하세요"
-      />
-
-      <label for="text3-input">국내 또는 해외</label>
-      <select id="country" name="country-input">
-        <option value="">선택</option>
-        <option value="한국">국내</option>
-        <option value="해외">해외</option>
-      </select>
-      <button type="submit">검색</button>
-    </form>
+    <!-- title -->
+    <div id="title">
+      <h1>Movie Tracker</h1>
+    </div>
+    <!-- question -->
+    <div id="question">
+      <form id="text-form">
+        <!-- 년도 입력칸 -->
+        <div id="when">
+          <label for="text1-input">년도</label>
+          <input
+            type="text"
+            id="year"
+            name="year-input"
+            placeholder="년도를 입력하세요"
+          />
+        </div>
+        <!-- 장르 입력칸 -->
+        <div id="typee">
+          <label for="text2-input">장르</label>
+          <input
+            type="text"
+            id="genre"
+            name="genre-input"
+            placeholder="장르를 입력하세요"
+          />
+        </div>
+        <!-- 국내 해외 선택 칸 -->
+        <div id="countri">
+          <label for="text3-input">국내 또는 해외</label>
+          <select id="country" name="country-input">
+            <option value="">선택</option>
+            <option value="한국">국내</option>
+            <option value="해외">해외</option>
+          </select>
+        </div>
+        <!-- 검색 버튼 칸 -->
+        <div><button type="submit">검색</button></div>
+      </form>
+    </div>
+    <!-- 챗봇이 답변해주는 칸 -->
     <div id="contents"></div>
 
-    <div id="result">
-      <!-- 합쳐진 텍스트 결과는 JavaScript를 통해 동적으로 추가될 예정입니다 -->
-    </div>
+    <!-- 최신 영화 광고 칸 -->
+    <div id="latest">이달의 영화</div>
 
     <!-- JavaScript 파일 연결 -->
     <script>
