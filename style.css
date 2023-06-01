@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Gamja+Flower&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nanum+Gothic&display=swap");
 
 /* 헤드 */
 #title {
@@ -20,7 +20,7 @@
 
 /* 검색 부분 */
 #question {
-  height: 1000px;
+  height: 500px;
   width: 440px;
   background-color: gray;
 }
@@ -127,10 +127,62 @@
 
 /* 이달의 영화칸 */
 #latest {
-  width: 1000px;
+  width: 1440px;
   height: 500px;
-  background-color: gray;
   float: right;
+  background-color: black;
+}
+
+/* 각 영화 차지하는 칸 */
+#movie1-box {
+  width: 360px;
+  height: 500px;
+  float: left;
+}
+
+#movie2-box {
+  width: 360px;
+  height: 500px;
+  float: left;
+}
+
+#movie3-box {
+  width: 360px;
+  height: 500px;
+  float: left;
+}
+
+#movie4-box {
+  width: 360px;
+  height: 500px;
+  float: left;
+}
+
+/* 영화 포스터 사이즈 */
+
+#movie1-poster {
+  width: 330px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie2-poster {
+  width: 330px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie3-poster {
+  width: 330px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie4-poster {
+  width: 330px;
+  height: 472.89px;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 /* 챗봇 답변 칸 */
@@ -139,9 +191,63 @@
   height: 500px;
   background-color: orange;
   float: right;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 25px;
 }
 
 /* 제목 가운데 정렬 */
 p {
   text-align: center;
+}
+
+/* 로딩바 */
+
+#loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* descripion창 */
+
+#description {
+  width: 1440px;
+  height: 500px;
+  background-color: aqua;
+  float: left;
+}
+
+#descript-title {
+  width: 1400px;
+  height: 100px;
+  float: left;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 40px;
+}
+
+#introduce {
+  width: 1400px;
+  height: 350px;
+  background-color: antiquewhite;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
 }
