@@ -208,7 +208,12 @@
   float: left;
 }
 
-/* 영화 포스터 사이즈 */
+/* 영화 포스터 */
+
+.btn-open-popup {
+  background-color: black;
+  border: None;
+}
 
 #movie1-poster {
   width: 330px;
@@ -363,3 +368,5 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* 포스터 modal */

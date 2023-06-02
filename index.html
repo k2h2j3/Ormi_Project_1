@@ -9,98 +9,103 @@
   </head>
   <body>
     <div id="wrap">
-      <section>
-          <!-- Head -->
-        <div id="title">
-          <h1><p>Movie Tracker</p></h1>
+      <!-- Head -->
+      <div id="title">
+        <h1><p>Movie Tracker</p></h1>
+      </div>
+      <!-- main -->
+      <div id="main">
+        <!-- 챗봇이 답변해주는 칸 -->
+        <div id="contents">
+          <div id="loader"></div>
         </div>
-        <!-- main -->
-        <div id="main">
-          <!-- 챗봇이 답변해주는 칸 -->
-          <div id="contents">
-            <div id="loader"></div>
-          </div>
-
-          <!-- question -->
-          <div id="question">
-            <div id="title-question">당신의 영화 취향은?</div>
-            <form id="text-form">
-              <!-- 년도 입력칸 -->
-              <div id="when">
-                <label for="text1-input"></label>
-                <input
-                  type="text"
-                  id="year"
-                  name="year-input"
-                  placeholder="년도를 입력하세요"
-                />
-              </div>
-              <!-- 장르 입력칸 -->
-              <div id="typee">
-                <label for="text2-input"></label>
-                <input
-                  type="text"
-                  id="genre"
-                  name="genre-input"
-                  placeholder="장르를 입력하세요"
-                />
-              </div>
-              <!-- 국내 해외 선택 칸 -->
-              <div id="countri">
-                <label for="text3-input"></label>
-                <select id="country" name="country-input">
-                  <option value="">선택</option>
-                  <option value="한국">국내</option>
-                  <option value="해외">해외</option>
-                </select>
-              </div>
-              <!-- 검색 버튼 칸 -->
-              <div id="search">
-                <button id="button" type="submit">영화 검색</button>
-              </div>
-            </form>
-            <!-- 로딩 창 -->
-            <div id="roading"></div>
-          </div>
-
-          <!-- 최신 영화 -->
-          <div id="latest">
-            <div id="latestmovie-title">
-              <div id="latestmovie-title-name">이달의 영화</div>
+        <!-- question -->
+        <div id="question">
+          <div id="title-question">당신의 영화 취향은?</div>
+          <form id="text-form">
+            <!-- 년도 입력칸 -->
+            <div id="when">
+              <label for="text1-input"></label>
+              <input
+                type="text"
+                id="year"
+                name="year-input"
+                placeholder="년도를 입력하세요"
+              />
             </div>
-            <div id="movie1-box">
+            <!-- 장르 입력칸 -->
+            <div id="typee">
+              <label for="text2-input"></label>
+              <input
+                type="text"
+                id="genre"
+                name="genre-input"
+                placeholder="장르를 입력하세요"
+              />
+            </div>
+            <!-- 국내 해외 선택 칸 -->
+            <div id="countri">
+              <label for="text3-input"></label>
+              <select id="country" name="country-input">
+                <option value="">선택</option>
+                <option value="한국">국내</option>
+                <option value="해외">해외</option>
+              </select>
+            </div>
+            <!-- 검색 버튼 칸 -->
+            <div id="search">
+              <button id="button" type="submit">영화 검색</button>
+            </div>
+          </form>
+          <!-- 로딩 창 -->
+          <div id="roading"></div>
+        </div>
+
+        <!-- 최신 영화 -->
+        <div id="latest">
+          <div id="latestmovie-title">
+            <div id="latestmovie-title-name">이달의 영화</div>
+          </div>
+          <div id="movie1-box">
+            <button class="btn-open-popup">
               <img id="movie1-poster" src="movieimg/movie1.png" />
-            </div>
-            <div id="movie2-box">
+            </button>
+          </div>
+          <div id="movie2-box">
+            <button class="btn-open-popup">
               <img id="movie2-poster" src="movieimg/movie2.png" />
-            </div>
-            <div id="movie3-box">
+            </button>
+          </div>
+          <div id="movie3-box">
+            <button class="btn-open-popup">
               <img id="movie3-poster" src="movieimg/movie3.png" />
-            </div>
-            <div id="movie4-box">
+            </button>
+          </div>
+          <div id="movie4-box">
+            <button class="btn-open-popup">
               <img id="movie4-poster" src="movieimg/movie4.png" />
-            </div>
+            </button>
           </div>
+        </div>
 
-          <!-- 베스트 영화 -->
-          <div id="best-movie">
-            <div id="bestmovie-title">
-              <div id="bestmovie-title-name">베스트 영화</div>
-            </div>
-            <div id="movie1-box">
-              <img id="movie1-poster" src="movieimg/bestmovie1.png" />
-            </div>
-            <div id="movie2-box">
-              <img id="movie2-poster" src="movieimg/bestmovie2.png" />
-            </div>
-            <div id="movie3-box">
-              <img id="movie3-poster" src="movieimg/bestmovie3.png" />
-            </div>
-            <div id="movie4-box">
-              <img id="movie4-poster" src="movieimg/bestmovie4.png" />
-            </div>
+        <!-- 베스트 영화 -->
+        <div id="best-movie">
+          <div id="bestmovie-title">
+            <div id="bestmovie-title-name">베스트 영화</div>
           </div>
-      </section>
+          <div id="movie1-box">
+            <img id="movie1-poster" src="movieimg/bestmovie1.png" />
+          </div>
+          <div id="movie2-box">
+            <img id="movie2-poster" src="movieimg/bestmovie2.png" />
+          </div>
+          <div id="movie3-box">
+            <img id="movie3-poster" src="movieimg/bestmovie3.png" />
+          </div>
+          <div id="movie4-box">
+            <img id="movie4-poster" src="movieimg/bestmovie4.png" />
+          </div>
+        </div>
         <!-- footer -->
         <footer>
           <nav>
@@ -117,6 +122,13 @@
 
     <!-- JavaScript 파일 연결 -->
     <script>
+      const modal = document.querySelector(".modal");
+      const btnOpenPopup = document.querySelector(".btn-open-popup");
+
+      btnOpenPopup.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
+      // 로딩버튼 처음에 가리기
       $("#loader").hide();
       let $button = document.querySelector("button");
 
