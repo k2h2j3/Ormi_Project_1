@@ -2,6 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300&family=Nanum+Gothic&display=swap");
 
+#wrap {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
 /* 헤드 */
 #title {
   background: linear-gradient(to right, #ffa7a3, #5673bd);
@@ -13,9 +18,9 @@
 
 /* 메인 */
 #main {
-  width: 1440px;
-  height: 2000px;
-  border: 1px solid tomato;
+  width: 1480px;
+  height: 1850px;
+  /* border: 1px solid tomato; */
 }
 
 /* 검색 부분 */
@@ -128,14 +133,14 @@
 /* 이달의 영화칸 */
 
 #latest {
-  width: 1440px;
+  width: 1480px;
   height: 700px;
   float: right;
   background-color: black;
 }
 
 #latestmovie-title {
-  width: 1440px;
+  width: 1480px;
   height: 100px;
   float: left;
   background-color: black;
@@ -148,14 +153,14 @@
 }
 
 #best-movie {
-  width: 1440px;
+  width: 1480px;
   height: 650px;
   float: right;
   background-color: black;
 }
 
 #bestmovie-title {
-  width: 1440px;
+  width: 1480px;
   height: 80px;
   float: left;
   background-color: black;
@@ -220,7 +225,7 @@
 
 /* 챗봇 답변 칸 */
 #contents {
-  width: 1000px;
+  width: 1040px;
   height: 500px;
   background-color: orange;
   float: right;
@@ -283,4 +288,46 @@ p {
   margin-top: 20px;
   margin-left: 20px;
   float: left;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  bottom: 0px;
+  position: absolute;
+  border-top: 1px soiid #c4c4c4;
+  padding-top: 15px;
+  color: #808080;
+  font-size: 11px;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 20px 10px 20px;
+  color: #808080;
+  font-size: 11px;
+}
+
+footer a:visited {
+  color: #808080;
+}
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer p span {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+section {
+  padding-bottom: 105px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
