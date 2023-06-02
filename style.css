@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300&family=Nanum+Gothic&display=swap");
 
 /* 헤드 */
 #title {
@@ -126,11 +126,44 @@
 }
 
 /* 이달의 영화칸 */
+
 #latest {
   width: 1440px;
-  height: 500px;
+  height: 700px;
   float: right;
   background-color: black;
+}
+
+#latestmovie-title {
+  width: 1440px;
+  height: 100px;
+  float: left;
+  background-color: black;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: red;
+}
+
+#best-movie {
+  width: 1440px;
+  height: 650px;
+  float: right;
+  background-color: black;
+}
+
+#bestmovie-title {
+  width: 1440px;
+  height: 80px;
+  float: left;
+  background-color: black;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 80px;
+  color: red;
+  display: flex;
+  justify-content: center;
 }
 
 /* 각 영화 차지하는 칸 */
