@@ -132,6 +132,18 @@
 
 /* 이달의 영화칸 */
 
+.movie img {
+  transition: all 0.2s linear;
+}
+
+.movie:hover img {
+  transform: scale(1.4);
+}
+
+.movie {
+  overflow: hidden;
+}
+
 #latest {
   width: 1480px;
   height: 700px;
@@ -204,10 +216,20 @@
   margin-left: 15px;
 }
 
+#movie1-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
+}
+
 #movie2-poster {
   width: 330px;
   margin-top: 20px;
   margin-left: 15px;
+}
+
+#movie2-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
 }
 
 #movie3-poster {
@@ -216,11 +238,21 @@
   margin-left: 15px;
 }
 
+#movie3-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
+}
+
 #movie4-poster {
   width: 330px;
   height: 472.89px;
   margin-top: 20px;
   margin-left: 15px;
+}
+
+#movie4-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
 }
 
 /* 챗봇 답변 칸 */
