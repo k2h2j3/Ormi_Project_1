@@ -5,7 +5,7 @@
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- CSS 파일 연결 -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
     <div id="wrap">
@@ -71,7 +71,7 @@
               <button class="btn-open-popup" id="btn-latest-movie1">
                 <img
                   id="movie1-poster"
-                  src="movieimg/movie1.png"
+                  src="./assets/movieimg/movie1.png"
                   href="#myModal1"
                 />
               </button>
@@ -80,7 +80,7 @@
               <button class="btn-open-popup" id="btn-latest-movie2">
                 <img
                   id="movie2-poster"
-                  src="movieimg/movie2.png"
+                  src="./assets/movieimg/movie2.png"
                   href="#myModal2"
                 />
               </button>
@@ -89,7 +89,7 @@
               <button class="btn-open-popup" id="btn-latest-movie3">
                 <img
                   id="movie3-poster"
-                  src="movieimg/movie3.png"
+                  src="./assets/movieimg/movie3.png"
                   href="#myModal3"
                 />
               </button>
@@ -98,7 +98,7 @@
               <button class="btn-open-popup" id="btn-latest-movie4">
                 <img
                   id="movie4-poster"
-                  src="movieimg/movie4.png"
+                  src="./assets/movieimg/movie4.png"
                   href="#myModal4"
                 />
               </button>
@@ -114,7 +114,7 @@
               <button class="btn-open-popup" id="btn-latest-movie5">
                 <img
                   id="movie1-poster"
-                  src="movieimg/bestmovie1.png"
+                  src="./assets/movieimg/bestmovie1.png"
                   href="#myModal5"
                 />
               </button>
@@ -123,7 +123,7 @@
               <button class="btn-open-popup" id="btn-latest-movie6">
                 <img
                   id="movie1-poster"
-                  src="movieimg/bestmovie2.png"
+                  src="./assets/movieimg/bestmovie2.png"
                   href="#myModal6"
                 />
               </button>
@@ -132,7 +132,7 @@
               <button class="btn-open-popup" id="btn-latest-movie7">
                 <img
                   id="movie1-poster"
-                  src="movieimg/bestmovie3.png"
+                  src="./assets/movieimg/bestmovie3.png"
                   href="#myModal7"
                 />
               </button>
@@ -141,7 +141,7 @@
               <button class="btn-open-popup" id="btn-latest-movie8">
                 <img
                   id="movie1-poster"
-                  src="movieimg/bestmovie4.png"
+                  src="./assets/movieimg/bestmovie4.png"
                   href="#myModal8"
                 />
               </button>
@@ -161,10 +161,9 @@
         </p>
       </footer>
       <!-- modal -->
-      <!-- Trigger/Open The Modal -->
-      <!-- The Modal -->
+      <!-- The Modal1 -->
       <div id="myModal1" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content1 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -191,9 +190,9 @@
           </div>
         </div>
       </div>
-      <!-- The Modal -->
+      <!-- The Modal2 -->
       <div id="myModal2" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content2 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -217,9 +216,9 @@
           </div>
         </div>
       </div>
-      <!-- The Modal -->
+      <!-- The Modal3 -->
       <div id="myModal3" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content3 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -242,9 +241,9 @@
           </div>
         </div>
       </div>
-      <!-- The Modal -->
+      <!-- The Modal4 -->
       <div id="myModal4" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content4 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -274,8 +273,9 @@
           </div>
         </div>
       </div>
+      <!-- The Modal5 -->
       <div id="myModal5" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content5 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -296,8 +296,9 @@
           </div>
         </div>
       </div>
+      <!-- The Modal6 -->
       <div id="myModal6" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content6 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -317,8 +318,9 @@
           </div>
         </div>
       </div>
+      <!-- The Modal7 -->
       <div id="myModal7" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content7 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -342,8 +344,9 @@
           </div>
         </div>
       </div>
+      <!-- The Modal8 -->
       <div id="myModal8" class="modal-custom">
-        <!-- Modal content -->
+        <!-- Modal content8 -->
         <div class="modal-content">
           <div class="modal-header">
             <span class="close-modal">×</span>
@@ -370,118 +373,7 @@
       </div>
     </div>
     <!-- JavaScript 파일 연결 -->
-    <script>
-      // 로딩버튼 처음에 가리기
-      $("#loader").hide();
-      // 모달
-      var btn = document.querySelectorAll("button.btn-open-popup");
-      console.log(btn);
-      var modals = document.querySelectorAll(".modal-custom");
-      console.log(modals);
-      var spans = document.getElementsByClassName("close-modal");
-      console.log(spans);
-
-      for (var i = 0; i < btn.length; i++) {
-        btn[i].onclick = function (e) {
-          e.preventDefault();
-          modal = document.querySelector(e.target.getAttribute("href"));
-          console.log(modal);
-          modal.style.display = "block";
-        };
-
-        spans[i].onclick = function () {
-          for (var index in modals) {
-            if (typeof modals[index].style !== "undefined")
-              modals[index].style.display = "none";
-          }
-        };
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target.classList.contains("modal-custom")) {
-          for (var index in modals) {
-            if (typeof modals[index].style !== "undefined")
-              modals[index].style.display = "none";
-          }
-        }
-      };
-
-      // dd
-      // function show() {
-      //   document.querySelector(".background").className = "background show";
-      // }
-
-      // function close() {
-      //   document.querySelector(".background").className = "background";
-      // }
-
-      // document.querySelector(".btn-open-popup").addEventListener("click", show);
-      // document.querySelector("#close").addEventListener("click", close);
-
-      let $button = document.querySelector("button");
-
-      function combineText() {
-        let qeustion;
-
-        let year = document.getElementById("year").value;
-        let genre = document.getElementById("genre").value;
-        let country = document.querySelector("select").value;
-
-        question =
-          year +
-          "년도의 장르가 " +
-          genre +
-          "인 " +
-          country +
-          "영화를 추천해 줘";
-
-        return question;
-      }
-
-      let data = [
-        {
-          role: "system",
-          content: "assistant는 영화 전문가이다.",
-        },
-      ];
-
-      let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
-
-      $button.addEventListener("click", (e) => {
-        $("#loader").show();
-        e.preventDefault();
-        userInputData = "";
-        var quest = combineText();
-        userInputData = quest;
-        console.log(userInputData);
-        quest = "";
-
-        data.push({
-          role: "user",
-          content: userInputData,
-        });
-
-        chatGptAPI();
-      });
-
-      function chatGptAPI() {
-        fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-          redirect: "follow",
-        })
-          .then((res) => res.json())
-          .then((res) => {
-            // console.log(res)
-            // console.log(res.choices[0].message.content)
-            document.querySelector("#contents").innerText =
-              res.choices[0].message.content;
-          });
-      }
-    </script>
+    <script src="./js/Chatbot.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
