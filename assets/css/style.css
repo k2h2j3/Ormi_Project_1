@@ -313,33 +313,7 @@ p {
   }
 }
 
-/* descripion창 */
-
-#description {
-  width: 1440px;
-  height: 500px;
-  background-color: aqua;
-  float: left;
-}
-
-#descript-title {
-  width: 1400px;
-  height: 100px;
-  float: left;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 40px;
-}
-
-#introduce {
-  width: 1400px;
-  height: 350px;
-  background-color: antiquewhite;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 25px;
-  margin-top: 20px;
-  margin-left: 20px;
-  float: left;
-}
+/* footer */
 
 footer {
   width: 100%;
