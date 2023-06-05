@@ -2,13 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300&family=Nanum+Gothic&display=swap");
 
-#wrap {
+body {
   min-height: 100vh;
   position: relative;
   width: 100%;
 }
 /* 헤드 */
-#title {
+header {
   background: linear-gradient(to right, #ffa7a3, #5673bd);
   padding: 0.43em 1em;
   font-size: 30px;
@@ -17,16 +17,16 @@
 }
 
 /* 메인 */
-#main {
-  width: 1480px;
+main {
+  width: 100%;
   height: 1850px;
   /* border: 1px solid tomato; */
 }
 
 /* 검색 부분 */
 #question {
-  height: 500px;
-  width: 440px;
+  height: 520px;
+  width: 30%;
   background-color: gray;
 }
 
@@ -37,7 +37,7 @@
 }
 
 /* 연도 입력 */
-#when {
+#text-year-box {
   height: 100px;
   width: 440px;
 }
@@ -55,7 +55,7 @@
 }
 
 /* 장르 입력 */
-#typee {
+#text-genre-box {
   height: 100px;
   width: 440px;
 }
@@ -72,7 +72,7 @@
 }
 
 /* 국내 또는 해외 선택 */
-#countri {
+#select-country-box {
   height: 100px;
   width: 440px;
 }
@@ -145,14 +145,14 @@
 }
 
 #latest {
-  width: 1480px;
+  width: 100%;
   height: 700px;
   float: right;
   background-color: black;
 }
 
 #latestmovie-title {
-  width: 1480px;
+  width: 100%;
   height: 100px;
   float: left;
   background-color: black;
@@ -165,14 +165,14 @@
 }
 
 #best-movie {
-  width: 1480px;
+  width: 100%;
   height: 650px;
   float: right;
   background-color: black;
 }
 
 #bestmovie-title {
-  width: 1480px;
+  width: 100%;
   height: 80px;
   float: left;
   background-color: black;
@@ -185,25 +185,25 @@
 
 /* 각 영화 차지하는 칸 */
 #movie1-box {
-  width: 360px;
+  width: 25%;
   height: 500px;
   float: left;
 }
 
 #movie2-box {
-  width: 360px;
+  width: 25%;
   height: 500px;
   float: left;
 }
 
 #movie3-box {
-  width: 360px;
+  width: 25%;
   height: 500px;
   float: left;
 }
 
 #movie4-box {
-  width: 360px;
+  width: 25%;
   height: 500px;
   float: left;
 }
@@ -262,8 +262,8 @@
 
 /* 챗봇 답변 칸 */
 #contents {
-  width: 1040px;
-  height: 500px;
+  width: 70%;
+  height: 520px;
   background-color: orange;
   float: right;
   font-family: "Nanum Gothic", sans-serif;

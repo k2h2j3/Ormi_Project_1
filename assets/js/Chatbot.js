@@ -2,19 +2,8 @@
 $("#loader-background").hide();
 
 let $button = document.querySelector("button");
-
-function combineText() {
-  let qeustion;
-
-  let year = document.getElementById("year").value;
-  let genre = document.getElementById("genre").value;
-  let country = document.querySelector("select").value;
-
-  question =
-    year + "년도의 장르가 " + genre + "인 " + country + "영화를 추천해 줘";
-
-  return question;
-}
+//챗봇 API
+let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
 
 //챗봇 학습데이터
 let data = [
@@ -24,8 +13,18 @@ let data = [
   },
 ];
 
-//챗봇 API
-let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
+function combineText() {
+  let qeustion;
+
+  const year = document.getElementById("year").value;
+  const genre = document.getElementById("genre").value;
+  const country = document.querySelector("select").value;
+
+  question =
+    year + "년도의 장르가 " + genre + "인 " + country + "영화를 추천해 줘";
+
+  return question;
+}
 
 $button.addEventListener("click", (e) => {
   e.preventDefault();
