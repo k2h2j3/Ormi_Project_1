@@ -1,5 +1,5 @@
 // 로딩버튼 처음에 가리기
-$("#loader").hide();
+$("#loader-background").hide();
 
 let $button = document.querySelector("button");
 
@@ -28,8 +28,6 @@ let data = [
 let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
 
 $button.addEventListener("click", (e) => {
-  //로딩 이미지 띄우기
-  $("#loader").show();
   e.preventDefault();
   userInputData = "";
   var quest = combineText();
@@ -59,4 +57,5 @@ function chatGptAPI() {
       document.querySelector("#contents").innerText =
         res.choices[0].message.content;
     });
+  $("#loader-background").show();
 }
