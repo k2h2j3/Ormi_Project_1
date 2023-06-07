@@ -20,7 +20,6 @@ header {
 main {
   width: 100%;
   height: 1850px;
-  /* border: 1px solid tomato; */
 }
 
 /* 검색 부분 */
@@ -28,57 +27,57 @@ main {
   height: 500px;
   width: 30%;
   background-color: #f29829;
+  display: flex;
+  flex-direction: column;
 }
 
 #title-question {
   font-size: 60px;
   font-family: "Dongle", sans-serif;
-  margin-left: 85px;
+  display: flex;
+  justify-content: center;
 }
 
 /* 연도 입력 */
 #text-year-box {
   height: 100px;
-  width: 440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #start-year {
   height: 30px;
-  width: 120px;
-  margin-top: 10px;
-  margin-left: 70px;
+  width: 30%;
   font-size: 15px;
   border-radius: 15px;
-  padding-left: 10px;
   border: 0;
   background-color: rgb(233, 233, 233);
 }
 
 #end-year {
   height: 30px;
-  width: 120px;
-  margin-top: 30px;
-  margin-left: 45px;
+  width: 30%;
   font-size: 15px;
   border-radius: 15px;
-  padding-left: 10px;
   border: 0;
   background-color: rgb(233, 233, 233);
+  margin-left: 10px;
 }
 
 /* 장르 입력 */
 #text-genre-box {
   height: 100px;
-  width: 440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #genre {
   height: 30px;
-  width: 300px;
-  margin-left: 70px;
+  width: 70%;
   font-size: 15px;
   border-radius: 15px;
-  padding-left: 10px;
   border: 0;
   background-color: rgb(233, 233, 233);
 }
@@ -86,21 +85,24 @@ main {
 /* 국내 또는 해외 선택 */
 #select-country-box {
   height: 100px;
-  width: 440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #country {
   height: 50px;
-  width: 200px;
-  margin-left: 120px;
+  width: 50%;
 }
 /* 검색 버튼 */
 #search {
   height: 50px;
-  width: 440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-#button {
+.btn {
   border: none;
   display: block;
   text-align: center;
@@ -110,7 +112,7 @@ main {
   overflow: hidden;
   position: relative;
   color: #fff;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 15px;
   background-color: #222;
   padding: 17px 60px;
@@ -118,28 +120,38 @@ main {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-#button span {
+.btn span {
   position: relative;
   z-index: 1;
 }
 
-#button:after {
+.btn:after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 490%;
   width: 140%;
-  background: #78c7d2;
+  background: #d96b0b;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
-#button:hover:after {
+.btn:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
 }
 
 /* 챗봇 답변 칸 */
@@ -237,7 +249,7 @@ main {
 }
 
 #movie1-poster {
-  width: 330px;
+  width: 90%;
   margin-top: 20px;
   margin-left: 15px;
 }
@@ -248,7 +260,7 @@ main {
 }
 
 #movie2-poster {
-  width: 330px;
+  width: 90%;
   margin-top: 20px;
   margin-left: 15px;
 }
@@ -259,7 +271,7 @@ main {
 }
 
 #movie3-poster {
-  width: 330px;
+  width: 90%;
   margin-top: 20px;
   margin-left: 15px;
 }
@@ -270,8 +282,7 @@ main {
 }
 
 #movie4-poster {
-  width: 330px;
-  height: 472.89px;
+  width: 90%;
   margin-top: 20px;
   margin-left: 15px;
 }
