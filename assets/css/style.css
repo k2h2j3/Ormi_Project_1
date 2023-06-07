@@ -9,7 +9,7 @@ body {
 }
 /* 헤드 */
 header {
-  background: linear-gradient(to right, #ffa7a3, #5673bd);
+  background: linear-gradient(to right, #f2b705, #401201);
   padding: 0.43em 1em;
   font-size: 30px;
   border-radius: 3px;
@@ -27,7 +27,7 @@ main {
 #question {
   height: 500px;
   width: 30%;
-  background-color: gray;
+  background-color: #f29829;
 }
 
 #title-question {
@@ -142,6 +142,14 @@ main {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+/* 챗봇 답변 칸 */
+#contents {
+  width: 70%;
+  height: 500px;
+  background-color: #d96b0b;
+  float: right;
+}
+
 /* 이달의 영화칸 */
 
 .movie img {
@@ -160,39 +168,40 @@ main {
   width: 100%;
   height: 650px;
   float: right;
-  background-color: black;
+  background-color: #401201;
 }
 
 #latestmovie-title {
   width: 100%;
   height: 100px;
   float: left;
-  background-color: black;
+  background-color: #401201;
   font-family: "Black Han Sans", sans-serif;
   font-size: 80px;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  color: red;
+  padding-top: 20px;
+  color: #f2b705;
 }
 
 #best-movie {
   width: 100%;
   height: 600px;
   float: right;
-  background-color: black;
+  background-color: #401201;
 }
 
 #bestmovie-title {
   width: 100%;
   height: 80px;
   float: left;
-  background-color: black;
+  background-color: #401201;
   font-family: "Black Han Sans", sans-serif;
   font-size: 80px;
-  color: gold;
+  color: #d96b0b;
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 /* 각 영화 차지하는 칸 */
@@ -223,7 +232,7 @@ main {
 /* 영화 포스터 */
 
 .btn-open-popup {
-  background-color: black;
+  background-color: #401201;
   border: None;
 }
 
@@ -270,14 +279,6 @@ main {
 #movie4-poster:hover {
   transition: all 0.2s linear;
   transform: scale(1.2);
-}
-
-/* 챗봇 답변 칸 */
-#contents {
-  width: 70%;
-  height: 500px;
-  background-color: orange;
-  float: right;
 }
 
 #chatbot-answer-box {
@@ -341,8 +342,9 @@ footer {
   position: absolute;
   border-top: 1px soiid #c4c4c4;
   padding-top: 15px;
-  color: #808080;
+  color: white;
   font-size: 11px;
+  background-color: #bf4c0a;
 }
 
 footer a {
@@ -353,7 +355,7 @@ footer a {
 }
 
 footer a:visited {
-  color: #808080;
+  color: white;
 }
 
 footer p {
@@ -393,7 +395,7 @@ body {
 }
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #f2b705;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -439,7 +441,7 @@ body {
 }
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #bf4c0a;
   color: white;
 }
 .modal-body {
@@ -448,6 +450,6 @@ body {
 }
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #bf4c0a;
   color: white;
 }
