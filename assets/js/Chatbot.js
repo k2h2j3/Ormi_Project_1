@@ -16,12 +16,20 @@ let data = [
 function combineText() {
   let qeustion;
 
-  const year = document.getElementById("year").value;
+  const startyear = document.getElementById("start-year").value;
+  const endyear = document.getElementById("end-year").value;
   const genre = document.getElementById("genre").value;
   const country = document.querySelector("select").value;
 
   question =
-    year + "년도의 장르가 " + genre + "인 " + country + "영화를 추천해 줘";
+    startyear +
+    "~" +
+    endyear +
+    "년도의 " +
+    genre +
+    " " +
+    country +
+    "영화를 추천해 줘";
 
   return question;
 }
@@ -52,7 +60,7 @@ function chatGptAPI() {
   })
     .then((res) => res.json())
     .then((res) => {
-      document.querySelector("#contents").innerText =
+      document.querySelector("#chatbot-answer-box").innerText =
         res.choices[0].message.content;
     });
   $("#loader-background").show();

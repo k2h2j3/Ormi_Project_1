@@ -17,8 +17,10 @@
       <section>
         <!-- 챗봇이 답변해주는 칸 -->
         <div id="contents">
-          <div id="loader-background">
-            <div id="loader"></div>
+          <div id="chatbot-answer-box">
+            <div id="loader-background">
+              <div id="loader"></div>
+            </div>
           </div>
         </div>
         <!-- question -->
@@ -29,10 +31,20 @@
             <div id="text-year-box">
               <label for="text1-input"></label>
               <input
-                type="text"
-                id="year"
-                name="year-input"
-                placeholder="년도를 입력하세요"
+                type="number"
+                id="start-year"
+                name="startyear-input"
+                min="2000"
+                max="2022"
+                placeholder="시작년도"
+              />
+              <input
+                type="number"
+                id="end-year"
+                name="endyear-input"
+                min="2000"
+                max="2022"
+                placeholder="끝년도"
               />
             </div>
             <!-- 장르 입력칸 -->
