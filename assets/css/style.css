@@ -65,6 +65,11 @@ main {
   margin-left: 10px;
 }
 
+#slash {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
 /* 장르 입력 */
 #text-genre-box {
   height: 100px;
@@ -75,7 +80,7 @@ main {
 
 #genre {
   height: 30px;
-  width: 70%;
+  width: 60%;
   font-size: 15px;
   border-radius: 15px;
   border: 0;
@@ -92,7 +97,7 @@ main {
 
 #country {
   height: 50px;
-  width: 50%;
+  width: 30%;
 }
 /* 검색 버튼 */
 #search {
