@@ -17,7 +17,7 @@
 - Java Script
 
 ### 2.2 배포 URL
-
+https://k2h2j3.github.io/Ormi_Project_1/
 
 ## 3. 프로젝트구조
 
@@ -25,6 +25,13 @@
 - 개인프로젝트 : 김승겸
 
 ## 5. UI
+
+![loading](https://github.com/k2h2j3/Ormi_Project_1/assets/74819625/194d8a13-0f76-4061-b12c-30328f21171d)
+![answer](https://github.com/k2h2j3/Ormi_Project_1/assets/74819625/875e5d2f-c7b9-4e0a-8d54-6dd304ce4a02)
+![link](https://github.com/k2h2j3/Ormi_Project_1/assets/74819625/f6fc0452-78fd-4b54-9db8-4ff41896ce09)
+
+
+
 
 ## 6. 메인 기능
 - 년도(시작 연도~끝 연도), 장르(액션, 로맨스, 코미디등..), 국내외를 입력하면 APi로 연동된 챗봇이 입력된 사용자의 취향정보를 통해 자동으로 영화를 추천해준다.
