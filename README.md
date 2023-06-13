@@ -20,8 +20,7 @@
 https://k2h2j3.github.io/Ormi_Project_1/
 
 ## 3. 프로젝트구조
-폴더 PATH의 목록입니다.
-볼륨 일련 번호는 B45E-1C07입니다.
+
 C:.
 │  index.html
 │  
