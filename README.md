@@ -21,6 +21,7 @@ https://k2h2j3.github.io/Ormi_Project_1/
 
 ## 3. 프로젝트구조
 
+```bash
 C:.
 │  index.html
 │  
@@ -44,6 +45,7 @@ C:.
             movie2.png
             movie3.png
             movie4.png
+```
             
 ## 4. 역할 분담
 - 개인프로젝트 : 김승겸
