@@ -20,15 +20,50 @@
 https://k2h2j3.github.io/Ormi_Project_1/
 
 ## 3. 프로젝트구조
-
+폴더 PATH의 목록입니다.
+볼륨 일련 번호는 B45E-1C07입니다.
+C:.
+│  index.html
+│  
+└─assets
+    ├─css
+    │      style.css
+    │      
+    ├─icon
+    │      film.png
+    │      
+    ├─js
+    │      Chatbot.js
+    │      modal.js
+    │      
+    └─movieimg
+            bestmovie1.png
+            bestmovie2.png
+            bestmovie3.png
+            bestmovie4.png
+            movie1.png
+            movie2.png
+            movie3.png
+            movie4.png
+            
 ## 4. 역할 분담
 - 개인프로젝트 : 김승겸
 
 ## 5. UI
 
 ![loading](https://github.com/k2h2j3/Ormi_Project_1/assets/74819625/194d8a13-0f76-4061-b12c-30328f21171d)
+
+영화 취향을 입력 후 검색 시 챗봇의 답변이 올라오기 전까지 로딩화면 띄움
+
+
 ![answer](https://github.com/k2h2j3/Ormi_Project_1/assets/74819625/875e5d2f-c7b9-4e0a-8d54-6dd304ce4a02)
+
+챗봇의 답변이 올라오면 로딩화면이 사라짐
+
+
 ![link](https://github.com/k2h2j3/Ormi_Project_1/assets/74819625/f6fc0452-78fd-4b54-9db8-4ff41896ce09)
+
+영화 포스터이미지에 마우스를 갖다대면 확대되며 클릭 할 시 모달창이 나오면서 줄거리와 출연진 소개, 이미지를 클릭하면 영화 예고편 유튜브 링크로 이동
 
 
 
