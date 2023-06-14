@@ -469,3 +469,8 @@ body {
   background-color: #bf4c0a;
   color: white;
 }
+
+.icon-movie-link {
+  width: 100px;
+  float: right;
+}
