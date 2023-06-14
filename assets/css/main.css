@@ -7,7 +7,7 @@ body {
   position: relative;
   width: 100%;
 }
-/* 헤드 */
+
 header {
   background: linear-gradient(to right, #f2b705, #401201);
   padding: 0.43em 1em;
@@ -16,13 +16,12 @@ header {
   color: #ffffff;
 }
 
-/* 메인 */
 main {
   width: 100%;
   height: 1850px;
 }
 
-/* 검색 부분 */
+/* question */
 #question {
   height: 500px;
   width: 30%;
@@ -38,7 +37,7 @@ main {
   justify-content: center;
 }
 
-/* 연도 입력 */
+/* year */
 #text-year-box {
   height: 100px;
   width: 100%;
@@ -70,7 +69,7 @@ main {
   padding-left: 10px;
 }
 
-/* 장르 입력 */
+/* genre */
 #text-genre-box {
   height: 100px;
   width: 100%;
@@ -87,7 +86,7 @@ main {
   background-color: rgb(233, 233, 233);
 }
 
-/* 국내 또는 해외 선택 */
+/* country */
 #select-country-box {
   height: 100px;
   width: 100%;
@@ -99,7 +98,7 @@ main {
   height: 50px;
   width: 30%;
 }
-/* 검색 버튼 */
+/* search button */
 #search {
   height: 50px;
   width: 100%;
@@ -159,7 +158,7 @@ main {
   font-size: 25px;
 }
 
-/* 챗봇 답변 칸 */
+/* chatbot answer */
 #contents {
   width: 70%;
   height: 500px;
@@ -176,7 +175,7 @@ main {
   font-size: 20px;
 }
 
-/* 이달의 영화칸 */
+/* latest movie */
 
 .movie img {
   transition: all 0.2s linear;
@@ -230,7 +229,6 @@ main {
   padding-bottom: 10px;
 }
 
-/* 각 영화 차지하는 칸 */
 #movie1-box {
   width: 25%;
   height: 500px;
@@ -255,7 +253,7 @@ main {
   float: left;
 }
 
-/* 제목 가운데 정렬 */
+/* 가운데 정렬 */
 p {
   text-align: center;
 }

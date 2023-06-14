@@ -17,7 +17,6 @@ for (var i = 0; i < btn.length; i++) {
   };
 }
 
-// 모달창이 띄워져 있는 상황에서 어떤 화면을 누르든 모달창이 닫히게 함
 window.onclick = function (event) {
   if (event.target.classList.contains("modal-custom")) {
     for (var index in modals) {

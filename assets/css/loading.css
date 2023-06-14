@@ -9,12 +9,12 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
   border-radius: 50%;
   width: 120px;
   height: 120px;

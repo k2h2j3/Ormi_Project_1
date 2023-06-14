@@ -1,7 +1,7 @@
-// 로딩버튼 처음에 가리기
 $("#loader-background").hide();
 
 let $button = document.querySelector("button");
+
 //챗봇 API
 let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
 
