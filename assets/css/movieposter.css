@@ -1,0 +1,48 @@
+.btn-open-popup {
+  background-color: #401201;
+  border: None;
+}
+
+#movie1-poster {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie1-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
+}
+
+#movie2-poster {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie2-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
+}
+
+#movie3-poster {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie3-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
+}
+
+#movie4-poster {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#movie4-poster:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.2);
+}

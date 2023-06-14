@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300&family=Nanum+Gothic&display=swap");
+
+body {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+/* 헤드 */
+header {
+  background: linear-gradient(to right, #f2b705, #401201);
+  padding: 0.43em 1em;
+  font-size: 30px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+/* 메인 */
+main {
+  width: 100%;
+  height: 1850px;
+}
+
+/* 검색 부분 */
+#question {
+  height: 500px;
+  width: 30%;
+  background-color: #f29829;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-question {
+  font-size: 60px;
+  font-family: "Dongle", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* 연도 입력 */
+#text-year-box {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#start-year {
+  height: 30px;
+  width: 30%;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+#end-year {
+  height: 30px;
+  width: 30%;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0;
+  background-color: rgb(233, 233, 233);
+  margin-left: 10px;
+}
+
+#slash {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+/* 장르 입력 */
+#text-genre-box {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#genre {
+  height: 30px;
+  width: 60%;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+/* 국내 또는 해외 선택 */
+#select-country-box {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#country {
+  height: 50px;
+  width: 30%;
+}
+/* 검색 버튼 */
+#search {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #d96b0b;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
+
+/* 챗봇 답변 칸 */
+#contents {
+  width: 70%;
+  height: 500px;
+  background-color: #d96b0b;
+  float: right;
+}
+
+#chatbot-answer-box {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 95%;
+  height: 450px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+}
+
+/* 이달의 영화칸 */
+
+.movie img {
+  transition: all 0.2s linear;
+}
+
+.movie:hover img {
+  transform: scale(1.4);
+}
+
+.movie {
+  overflow: hidden;
+}
+
+#latest {
+  width: 100%;
+  height: 650px;
+  float: right;
+  background-color: #401201;
+}
+
+#latestmovie-title {
+  width: 100%;
+  height: 100px;
+  float: left;
+  background-color: #401201;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: #f2b705;
+}
+
+#best-movie {
+  width: 100%;
+  height: 600px;
+  float: right;
+  background-color: #401201;
+}
+
+#bestmovie-title {
+  width: 100%;
+  height: 80px;
+  float: left;
+  background-color: #401201;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 80px;
+  color: #d96b0b;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/* 각 영화 차지하는 칸 */
+#movie1-box {
+  width: 25%;
+  height: 500px;
+  float: left;
+}
+
+#movie2-box {
+  width: 25%;
+  height: 500px;
+  float: left;
+}
+
+#movie3-box {
+  width: 25%;
+  height: 500px;
+  float: left;
+}
+
+#movie4-box {
+  width: 25%;
+  height: 500px;
+  float: left;
+}
+
+/* 제목 가운데 정렬 */
+p {
+  text-align: center;
+}
