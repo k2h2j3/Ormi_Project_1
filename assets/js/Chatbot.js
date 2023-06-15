@@ -21,23 +21,15 @@ function combineText() {
   const genre = document.getElementById("genre").value;
   const country = document.querySelector("select").value;
 
-  question =
-    startyear +
-    "~" +
-    endyear +
-    "년도의 " +
-    genre +
-    " " +
-    country +
-    "영화를 추천해 줘";
+  question = `${startyear} ~ ${endyear}년도의 ${genre} ${country}영화를 추천해 줘`;
 
   return question;
 }
 
 $button.addEventListener("click", (e) => {
   e.preventDefault();
-  userInputData = "";
-  var quest = combineText();
+  let userInputData = "";
+  let quest = combineText();
   userInputData = quest;
   quest = "";
 
